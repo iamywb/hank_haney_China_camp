@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hank Haney China Camp - Official Brochure</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Roboto:wght@300;500;700&display=swap');
+
+        :root {
+            --gold: #C5A059;
+            --black: #111111;
+            --grey: #f4f4f4;
+            --text: #333333;
+        }
+
+        body {
+            font-family: 'Noto Serif SC', "Songti SC", serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        /* HERO SECTION */
+        header {
+            background-color: var(--black);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3em;
+            margin: 0;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .subtitle {
+            color: var(--gold);
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .chinese-title {
+            margin-top: 15px;
+            font-size: 1.5em;
+            font-weight: 700;
+            opacity: 0.9;
+        }
+
+        /* INTRO */
+        .section {
+            padding: 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .intro-text {
+            font-size: 1.1em;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            color: var(--black);
+            border-left: 5px solid var(--gold);
+            padding-left: 15px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* STATS GRID */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            background-color: var(--grey);
+            padding: 30px;
+            border-radius: 4px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--gold);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #666;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /* PHILOSOPHY */
+        .quote-box {
+            background-color: var(--black);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .quote-text {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .quote-author {
+            color: var(--gold);
+            font-weight: bold;
+        }
+
+        /* VIDEO CARDS */
+        .video-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .video-card {
+            display: flex;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+            background: white;
+        }
+
+        .video-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .video-thumb {
+            width: 150px;
+            background-color: #000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+        
+        .video-thumb::after {
+            content: "▶";
+            font-size: 2em;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .video-content {
+            padding: 20px;
+        }
+
+        .video-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            display: block;
+            color: var(--black);
+        }
+
+        .video-desc {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .video-meta {
+            font-size: 0.75em;
+            color: #999;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /* CALL TO ACTION */
+        .cta-section {
+            background-color: var(--gold);
+            color: var(--black);
+            text-align: center;
+            padding: 50px 40px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: var(--black);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        /* PRINT STYLES */
+        @media print {
+            body { margin: 0; padding: 0; }
+            .container { max-width: 100%; width: 100%; box-shadow: none; }
+            .video-card { break-inside: avoid; border: 1px solid #ccc; }
+            a { text-decoration: none; }
+            .cta-btn { border: 2px solid black; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Hank Haney</h1>
+        <div class="subtitle">The Blueprint of Champions</div>
+        <div class="chinese-title">汉克·哈尼 —— 冠军背后的设计师</div>
+    </header>
+
+    <div class="section">
+        <h2>传奇经历 (The Legend)</h2>
+        <div class="intro-text">
+            在职业高尔夫的世界里，天赋常有，但传奇般的稳定性却极其罕见。在2004年至2010年的六年间，汉克·哈尼 (Hank Haney) 作为泰格·伍兹 (Tiger Woods) 的挥杆教练，亲手打造了高尔夫历史上最伟大的王朝。
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">31</span>
+                <span class="stat-label">PGA Tour Wins<br>巡回赛冠军</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Major Titles<br>大满贯头衔</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">33%</span>
+                <span class="stat-label">Win Rate<br>惊人胜率</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="quote-box">
+        <div class="quote-text">“我的教学哲学很简单：你必须拥有一个计划 (Plan)，并且消除你的‘重大失误’ (The Big Miss)。”</div>
+        <div class="quote-author">— 汉克·哈尼 (Hank Haney)</div>
+    </div>
+
+    <div class="section">
+        <h2>精选教学与分析 (Masterclass Showcase)</h2>
+        <p style="margin-bottom: 20px; color: #666; font-size: 0.9em;">点击以下卡片观看高清教学视频 (Click to watch HD videos)</p>
+        
+        <div class="video-grid">
+            <!-- Video 1: Tiger Woods Analysis -->
+            <a href="https://www.youtube.com/watch?v=WarBqfJopjg" target="_blank" class="video-card">
+                <div class="video-thumb"></div>
+                <div class="video-content">
+                    <span class="video-title">深度解析：泰格·伍兹的冠军挥杆结构</span>
+                    <div class="video-desc">Tiger Woods Swing Theory (Slow Motion). 见证汉克如何打造经得起大满贯压力考验的完美结构。</div>
+                    <div class="video-meta">HD Quality • Swing Analysis</div>
+                </div>
+            </a>
+
+            <!-- Video 2: Slice Fix -->
+            <a href="https://www.youtube.com/watch?v=TcC4I-cHbHs" target="_blank" class="video-card">
+                <div class="video-thumb"></div>
+                <div class="video-content">
+                    <span class="video-title">实战教学：5分钟修正右曲球 (Slice)</span>
+                    <div class="video-desc">Live Lesson: Fixing the Slice. 汉克现场演示，仅用几分钟时间修正业余球手多年的顽疾。</div>
+                    <div class="video-meta">Live Lesson • Instant Results</div>
+                </div>
+            </a>
+
+            <!-- Video 3: Wrist Control -->
+            <a href="https://www.youtube.com/watch?v=_q1FPJ2pVGE" target="_blank" class="video-card">
+                <div class="video-thumb"></div>
+                <div class="video-content">
+                    <span class="video-title">2025 核心技术：手腕控制大师课</span>
+                    <div class="video-desc">Master Wrist Control. 聆听汉克最新的教学理念，掌握职业球员的精准控制技术。</div>
+                    <div class="video-meta">Modern Technique • Advanced</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>加入精英训练营 (Join The Camp)</h2>
+        <div class="intro-text">
+            <p>这不仅仅是一次高尔夫课程，这是通往卓越的快车道。</p>
+            <ul>
+                <li><strong>青少年 (Juniors):</strong> 铺平通往美国大学高尔夫奖学金 (IJGA) 的道路。</li>
+                <li><strong>成人 (Adults):</strong> 像查尔斯·巴克利 (Charles Barkley) 一样接受 VIP 定制指导。</li>
+            </ul>
+            <p>不要再猜测您的挥杆了。让世界第一教练为您制定计划。</p>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <h2 style="border:none; color:inherit; padding:0; margin-bottom:10px;">立即报名 (Register Now)</h2>
+        <p>席位有限，预约世界顶级指导</p>
+        <a href="#" class="cta-btn">联系我们 (CONTACT US)</a>
+    </div>
+
+    <div style="text-align: center; padding: 20px; color: #999; font-size: 0.8em;">
+        &copy; 2025 Hank Haney Golf. Authorized Promotion for China Market.
+    </div>
+</div>
+
+</body>
+</html>
